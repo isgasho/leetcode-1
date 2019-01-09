@@ -1,6 +1,6 @@
 extern crate leetcode;
 
-use leetcode::index1_10::*;
+use leetcode::index_1_10::*;
 
 #[test]
 fn two_sum_works() {
