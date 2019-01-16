@@ -11,7 +11,7 @@ pub fn fizz_buzz(n: i32) -> Vec<String> {
         } else if i % 5 == 0 {
             result.push("Buzz".to_string());
         } else {
-          result.push(i.to_string());
+            result.push(i.to_string());
         }
 
         i += 1;
