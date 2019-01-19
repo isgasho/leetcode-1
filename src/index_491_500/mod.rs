@@ -1,3 +1,27 @@
+use std::collections::HashMap;
+
+// 496
+pub fn next_greater_element(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
+    let mut store = HashMap::new();
+    let mut result = vec![-1i32; nums1.len()];
+
+    for (index, num) in nums2.iter().enumerate() {
+        store.insert(num, index);
+    }
+
+    for (index, num1) in nums1.iter().enumerate() {
+        let from = store.get(&num1).unwrap() + 1;
+        for num2 in &nums2[from..] {
+            if *num2 > *num1 {
+                result[index] = *num2;
+                break;
+            }
+        }
+    }
+
+    return result;
+}
+
 // 500
 pub fn find_words(words: Vec<String>) -> Vec<String> {
     let keyboard_rows = vec!["qwertyuiop", "asdfghjkl", "zxcvbnm"];
