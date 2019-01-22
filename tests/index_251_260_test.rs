@@ -7,4 +7,3 @@ use leetcode::index_251_260::*;
 fn invert_tree_works() {
     assert_eq!(add_digits(38), 2)
 }
-
