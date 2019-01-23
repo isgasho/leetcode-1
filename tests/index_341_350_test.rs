@@ -11,3 +11,10 @@ fn reverse_string_works() {
         "amanaP :lanac a ,nalp a ,nam A"
     )
 }
+
+// 349
+#[test]
+fn intersection_works() {
+    assert_eq!(intersection(vec![1, 2, 2, 1], vec![2, 2]), vec![2]);
+    assert_eq!(intersection(vec![4, 9, 5], vec![9, 4, 9, 8, 4]), vec![9, 4]);
+}
