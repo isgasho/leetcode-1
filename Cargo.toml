@@ -3,5 +3,10 @@ name = "leetcode"
 version = "0.1.0"
 authors = ["Yue Yang <g1enyy0ung@gmail.com>"]
 edition = "2018"
+description = "leetcode & rust"
+keywords = ["leetcode"]
+repository = "https://github.com/g1eny0ung/leetcode"
+license = "MIT"
+publish = false
 
 [dependencies]
