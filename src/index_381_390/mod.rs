@@ -6,11 +6,7 @@ pub fn find_the_difference(s: String, t: String) -> char {
     let mut result = 'a';
 
     for c in s.chars() {
-        if !store.contains_key(&c) {
-            store.insert(c, 1);
-        } else {
-            *store.get_mut(&c).unwrap() += 1;
-        }
+        *store.entry(c).or_insert(1) += 1;
     }
 
     for c in t.chars() {
