@@ -2,6 +2,12 @@ extern crate leetcode;
 
 use leetcode::index_161_170::*;
 
+// 167
+#[test]
+fn two_sum_works() {
+    assert_eq!(two_sum(vec![2, 7, 11, 15], 9), vec![1, 2]);
+}
+
 // 169
 #[test]
 fn majority_element_works() {
