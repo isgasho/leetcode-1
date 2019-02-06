@@ -20,8 +20,8 @@
     "prefix": "rust_test_template_initialization",
     "body": [
       "extern crate $1;\n",
-      "use leetcode::index_$2;\n",
-      "$3\n#[test]\n",
+      "use leetcode::index_$2::*;\n",
+      "$3\n#[test]",
       "fn _works() {",
       "    assert_eq!",
       "}"
