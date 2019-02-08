@@ -20,6 +20,25 @@ pub fn can_construct(ransom_note: String, magazine: String) -> bool {
     return true;
 }
 
+// 387
+pub fn first_uniq_char(s: String) -> i32 {
+    let mut store = vec![0; 26];
+
+    for c in s.chars() {
+        let i = c as usize;
+        store[i - 97] += 1;
+    }
+
+    for (i, c) in s.chars().enumerate() {
+        let store_i = c as usize;
+        if store[store_i - 97] == 1 {
+            return i as i32;
+        }
+    }
+
+    return -1;
+}
+
 // 389
 pub fn find_the_difference(s: String, t: String) -> char {
     let mut store = HashMap::new();
