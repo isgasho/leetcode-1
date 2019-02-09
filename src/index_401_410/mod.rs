@@ -3,6 +3,29 @@ use std::cell::RefCell;
 use std::collections::HashSet;
 use std::rc::Rc;
 
+// 401
+pub fn read_binary_watch(num: i32) -> Vec<String> {
+    let mut result: Vec<String> = vec![];
+
+    fn bit_count(num: i32) -> i32 {
+        format!("{:b}", num)
+            .chars()
+            .filter(|c| *c == '1')
+            .collect::<Vec<char>>()
+            .len() as i32
+    }
+
+    for h in 0..12 {
+        for m in 0..60 {
+            if bit_count(h * 64 + m) == num {
+                result.push(format!("{}:{:02}", h, m));
+            }
+        }
+    }
+
+    result
+}
+
 // 405
 pub fn sum_of_left_leaves(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
     match root {
