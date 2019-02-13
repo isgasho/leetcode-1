@@ -32,9 +32,9 @@ pub fn find_words(words: Vec<String>) -> Vec<String> {
         let word = word.to_lowercase();
         let first_char = word.chars().next().unwrap();
         let mut target_row = "";
-        for row in &keyboard_rows {
+        for row in keyboard_rows.iter() {
             if row.contains(first_char) {
-                target_row = *row;
+                target_row = row;
                 break;
             }
         }
