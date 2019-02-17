@@ -4,6 +4,7 @@ use leetcode::index_341_350::*;
 
 // 344
 #[test]
+#[ignore]
 fn reverse_string_works() {
     assert_eq!(reverse_string("hello".to_string()), "olleh");
     assert_eq!(
@@ -14,6 +15,7 @@ fn reverse_string_works() {
 
 // 349
 #[test]
+#[ignore]
 fn intersection_works() {
     assert_eq!(intersection(vec![1, 2, 2, 1], vec![2, 2]), vec![2]);
 }

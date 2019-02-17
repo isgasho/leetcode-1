@@ -4,6 +4,7 @@ use leetcode::index_381_390::*;
 
 // 383
 #[test]
+#[ignore]
 fn can_construct_works() {
     assert_eq!(can_construct(String::from("aa"), String::from("aab")), true);
     assert_eq!(can_construct(String::from("aa"), String::from("ab")), false);
@@ -11,6 +12,7 @@ fn can_construct_works() {
 
 // 387
 #[test]
+#[ignore]
 fn first_uniq_char_works() {
     assert_eq!(first_uniq_char(String::from("leetcode")), 0);
     assert_eq!(first_uniq_char(String::from("loveleetcode")), 2);
@@ -18,6 +20,7 @@ fn first_uniq_char_works() {
 
 // 389
 #[test]
+#[ignore]
 fn find_the_difference_works() {
     assert_eq!(
         find_the_difference("abcd".to_string(), "abcde".to_string()),

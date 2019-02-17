@@ -4,6 +4,7 @@ use leetcode::index_241_250::*;
 
 // 242
 #[test]
+#[ignore]
 fn is_anagram_works() {
     assert_eq!(
         is_anagram(String::from("anagram"), String::from("nagaram")),

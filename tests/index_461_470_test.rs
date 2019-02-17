@@ -4,12 +4,14 @@ use leetcode::index_461_470::*;
 
 // 461
 #[test]
+#[ignore]
 fn hamming_distance_works() {
     assert_eq!(hamming_distance(1, 4), 2);
 }
 
 // 463
 #[test]
+#[ignore]
 fn island_perimeter_works() {
     assert_eq!(
         island_perimeter(vec![

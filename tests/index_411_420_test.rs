@@ -4,6 +4,7 @@ use leetcode::index_411_420::*;
 
 // 412
 #[test]
+#[ignore]
 fn fizz_buzz_works() {
     assert_eq!(
         fizz_buzz(15),
