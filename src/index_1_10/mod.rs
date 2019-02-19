@@ -18,3 +18,20 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
 
     return vec![0, 0];
 }
+
+// 9
+pub fn is_palindrome(x: i32) -> bool {
+    if x == 0 { return true; }
+    if x < 0 || x % 10 == 0{
+        return false;
+    }
+
+    let mut x = x;
+    let mut rev = 0;
+    while x > rev {
+        rev = rev * 10 + x % 10;
+        x = x / 10;
+    }
+
+    return x == rev || x == rev / 10;
+}
